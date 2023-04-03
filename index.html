@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Tortas México Oriente</title>
+</head>
+<script type="text/javascript">
+  function validar_envio(){
+    if(document.formulario_menu.Nombre.value.length==0){
+      alert("Te faltó escribir tu NOMBRE")
+      document.formulario_menu.Nombre.focus()
+      return 0;
+    }
+    if(document.formulario_menu.email.value.length==0){
+      alert("Te faltó escribir tu CORREO ELECTRÓNICO")
+      document.formulario_menu.email.focus()
+      return 0;
+    }
+    if(document.formulario_menu.Dirección.value.length==0){
+      alert("Te faltó anexar tu DIRECCIÖN")
+      document.formulario_menu.Dirección.focus()
+      return 0;
+    }
+    document.formulario_menu.submit();
+  }
+</script>
+<body>
+  <div class="contenedor1">
+  <h1>Tortas Mexico Oriente</h1>
+</div>
+  <br>
+  <div class="contenedor2">
+    <form action="https://formsubmit.co/tortas.mexico.oriente@gmail.com" method="post" name="formulario_menu">
+      <input type="text" name="Nombre" placeholder="Nombre Completo*" class="campos">
+      <br>
+      <input type="email" placeholder="Correo Electrónico*" name="email" class="campos">
+      <br>
+      <input type="text" name="Dirección" placeholder="Dirección*" class="campos">
+      <br><br>
+      <h2>Elija su pedido</h2>
+      <br>
+      <div class="contenedor2_1">
+        <p>Tortas</p>
+        <br>
+        <select name="Tortas" id="" class="campos">
+          <option value="">Elija su torta</option>
+          <option value="Torta de Asado">Torta de Asado</option>
+          <option value="Torta de Asado con chorizo">Torta de Asado con chorizo</option>
+          <option value="Torta de Alambre">Torta de Alambre</option>
+          <option value="Torta de Empanizado">Torta de Empanizado</option>
+          <option value="Torta de Huevo">Torta de huevo</option>
+          <option value="Omelette">Torta de Omelette</option>
+        </select>
+        <br><br>
+        <p>Complemento de torta de huevo <span class="negritas">(Válido solo para torta de huevo)</span></p>
+        <br>
+        <select name="Complemento de torta de huevo" id="" class="campos">
+          <option value="">Elija con que quiere acompañar su huevo</option>
+          <option value="Huevo con Chorizo">Huevo con Chorizo</option>
+          <option value="Huevo con Tocino">Huevo con Tocino</option>
+          <option value="Huevo con Salchicha">Huevo con Salchicha</option>
+          <option value="Huevo con Jamón">Huevo con Jamón</option>
+          <option value="Huevo con Tomate">Huevo con Tomate</option>
+          <option value="Huevo con Cebolla">Huevo con Cebolla</option>
+        </select>
+        <br><br>
+        <p>Cantidad de tortas</p>
+        <br>
+        <select name="Número de tortas" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 torta">1</option>
+          <option value="2 tortas">2</option>
+          <option value="3 tortas">3</option>
+          <option value="4 tortas">4</option>
+          <option value="5 tortas">5</option>
+          <option value="6 tortas">6</option>
+          <option value="7 tortas">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Tortas que lleven Jamón o queso</p>
+        <br>
+        <select name="tortas que lleve jamón o queso" id="" class="campos">
+          <option value="">Elija su torta</option>
+          <option value="Torta de Asado">Torta de Asado</option>
+          <option value="Torta de Asado con chorizo">Torta de Asado con chorizo</option>
+          <option value="Torta de Empanizado">Torta de Empanizado</option>
+          <option value="Torta de Pierna">Torta de Pierna</option>
+          <option value="Torta de Alambre">Torta de Alambre</option>
+        </select>
+        <br><br>
+         <p>Complemento de torta (Jamón o queso)</p>
+        <br>
+        <select name="Complemento de torta (Jamón o queso)" id="" class="campos">
+          <option value="">Elija su complemento</option>
+          <option value="Jamón extra">Jamón extra</option>
+          <option value="Queso extra">Queso extra</option>
+          </select>
+        <p>Cantidad de tortas</p>
+        <br>
+        <select name="Número de tortas" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 torta">1</option>
+          <option value="2 tortas">2</option>
+          <option value="3 tortas">3</option>
+          <option value="4 tortas">4</option>
+          <option value="5 tortas">5</option>
+          <option value="6 tortas">6</option>
+          <option value="7 tortas">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Tortas Especiales, incluye: Chorizo, Jamón, Queso, Huevo (solo 1 ingrediente extra)</p>
+        <br>
+        <select name="Tortas especiales" id="" class="campos">
+          <option value="">Elija su torta</option>
+          <option value="Torta de Asado">Torta de Asado</option>
+          <option value="Torta de Empanizado">Torta de Empanizado</option>
+          <option value="Torta de Alambre">Torta de Alambre</option>
+          <option value="Torta de Pierna">Torta de Pierna</option>
+        </select>
+        <br><br>
+        <p>Ingrediente extra a elegir</p>
+        <br>
+        <select name="Ingrediente extra para la torta especial" id="" class="campos">
+          <option value="">Elija su ingrediente extra</option>
+          <option value="Torta con Chorizo extra">Chorizo extra</option>
+          <option value="Torta con Jamón extra">Jamón extra</option>
+          <option value="Torta con Queso extra">Queso extra</option>
+          <option value="Torta con Huevo extra">Huevo extra</option>
+        </select>
+        <br><br>
+        <p>Cantidad de tortas especiales</p>
+        <br>
+        <select name="Número de tortas especiales" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 torta especial">1</option>
+          <option value="2 tortas especiales">2</option>
+          <option value="3 tortas especiales">3</option>
+          <option value="4 tortas especiales">4</option>
+          <option value="5 tortas especiales">5</option>
+          <option value="6 tortas especiales">6</option>
+          <option value="7 tortas especiales">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Refrescos</p>
+        <br>
+        <select name="Refrescos" id="" class="campos">
+          <option value="">Elija su refresco</option>
+          <option value="Coca-cola">Coca-cola</option>
+          <option value="Coca sin azucar">Coca-cola sin azúcar</option>
+          <option value="Manzanita">Manzanita</option>
+          <option value="Sprite">Sprite</option>
+          <option value="Mirinda">Mirinda</option>
+          <option value="Fanta">Fanta</option>
+          <option value="Pepsi">Pepsi</option>
+        </select>
+        <br><br>
+        <p>Cantidad de refrescos</p>
+        <br>
+        <select name="Cantidad_de_refrescos" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 refresco">1</option>
+          <option value="2 refrescos">2</option>
+          <option value="3 refrescos">3</option>
+          <option value="4 refrescos">4</option>
+          <option value="5 refrescos">5</option>
+          <option value="6 refrescos">6</option>
+          <option value="7 refrescos">7</option>
+        </select>
+        <br><br>
+      </div>
+      <div class="contenedor2_2">
+        <p>Hamburguesas</p>
+        <br>
+        <select name="Hamburguesas" id="" class="campos">
+          <option value="">Elija su hamburguesa</option>
+          <option value="Hamburguesa Simple">Hamburguesa simple</option>
+          <option value="Hamburguesa con Tocino">Hamburguesa con Tocino</option>
+          <option value="Hamburguesa con Piña">Hamburguesa con Piña</option>
+          <option value="Hamburguesa con Chorizo">Hamburguesa con Chorizo</option>
+          <option value="Hamburguesa con Champiñon">Hamburguesa con Champiñon</option>
+        </select>
+        <br><br>
+        <p>Cantidad de hamburguesas</p>
+        <br>
+        <select name="Número de hamburguesas" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 hamburguesa">1</option>
+          <option value="2 hamburguesas">2</option>
+          <option value="3 hamburguesas">3</option>
+          <option value="4 hamburguesas">4</option>
+          <option value="5 hamburguesas">5</option>
+          <option value="6 hamburguesas">6</option>
+          <option value="7 hamburguesas">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Burritas</p>
+        <br>
+        <select name="Burritas" id="" class="campos">
+          <option value="">Elija su burrita</option>
+          <option value="Burritas Simple">Burrita simple</option>
+          <option value="Burritas con Chorizo">Burrita con Chorizo</option>
+          <option value="Burritas con Champiqueso">Burrita con Champiqueso</option>
+        </select>
+        <br><br>
+        <p>Cantidad de burritas</p>
+        <br>
+        <select name="Número de burritas" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 burrita">1</option>
+          <option value="2 burritas">2</option>
+          <option value="3 burritas">3</option>
+          <option value="4 burritas">4</option>
+          <option value="5 burritas">5</option>
+          <option value="6 burritas">6</option>
+          <option value="7 burritas">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Tacos (Maíz, harína)</p>
+        <br>
+        <select name="Tacos" id="" class="campos">
+          <option value="">Elija sus tacos</option>
+          <option value="Tacos de Maíz">Taco de Maíz</option>
+          <option value="Tacos de Harina">Taco de Harina</option>
+          <option value="Tacos Especiales de maíz">Tacos especiales de maíz (Incluye jamón, queso e ingrediente a elegir)</option>
+          <option value="Especiales de Harina">Tacos especiales de Harina (Incluye jamón, queso e ingrediente a elegir)</option>
+        </select>
+        <br><br>
+        <p>Cantidad de tacos</p>
+        <br>
+        <select name="Número de tacos" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 taco">1</option>
+          <option value="2 tacos">2</option>
+          <option value="3 tacos">3</option>
+          <option value="4 tacos">4</option>
+          <option value="5 tacos">5</option>
+          <option value="6 tacos">6</option>
+          <option value="7 tacos">7</option>
+        </select>
+        <br><br>
+        <hr>
+        <br><br>
+        <p>Hot-dogs</p>
+        <br>
+        <select name="Hot-dogs" id="" class="campos">
+          <option value="">Elija su hot-dog</option>
+          <option value="Hot-dogs Sencillos">Hot-dog sencillo</option>
+          <option value="Hot-dogs Especiales">Hot-dog especial (Jamón, queso y tocino)</option>
+        </select>
+        <br><br>
+        <p>Cantidad de Hot-dogs</p>
+        <br>
+        <select name="Número de Hot-dogs" id="" class="campos">
+          <option value="">Ninguna</option>
+          <option value="1 Hot-dog">1</option>
+          <option value="2 Hot-dogs">2</option>
+          <option value="3 Hot-dogs">3</option>
+          <option value="4 Hot-dogs">4</option>
+          <option value="5 Hot-dogs">5</option>
+          <option value="6 Hot-dogs">6</option>
+          <option value="7 Hot-dogs">7</option>
+        </select>
+        <br><br>
+      </div>
+      <input name="Pedido extra" type="text" placeholder="Si lo desea agregue algún pedido extra del menu" class="campos">
+      <br>
+      <input type="button" value="Enviar" id="Enviar" onclick="validar_envio()">
+    </form>
+  </div>
+  <br><br>
+  <p>Nota: Una vez enviado su pedido le devolveremos un correo de confirmación de su pedido 😊</p>
+</body>
+</html>
